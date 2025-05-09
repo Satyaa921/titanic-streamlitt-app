@@ -18,5 +18,7 @@ if st.button("Predict"):
         prediction = model.predict(input_scaled)
         result = "Survived" if prediction[0] == 1 else "Not Survived"
         st.success(f"Prediction: {result}")
-    except:
-        st.error("Please enter valid numeric values separated by commas.")
+    except Exception as e:
+        st.error(f"Error: {str(e)}")
+        st.info("Make sure you're entering the correct number of numeric values (e.g., 3,22,1,0,7.25,1,0,1)")
+
