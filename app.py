@@ -20,5 +20,5 @@ if st.button("Predict"):
         st.success(f"Prediction: {result}")
     except Exception as e:
         st.error(f"Error: {str(e)}")
-        st.info("Make sure you're entering the correct number of numeric values (e.g., 3,22,1,0,7.25,1,0,1)")
+        st.info("Make sure you're entering the correct number of numeric values (e.g., 3,22,1,0,7,25,1,0,1)")
 
