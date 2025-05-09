@@ -1,5 +1,3 @@
-!pip install -r requirements.txt
-
 import streamlit as st
 import pickle
 import numpy as np
